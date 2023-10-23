@@ -1,0 +1,1964 @@
+doctype html
+html.no-js(lang='zxx')
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='x-ua-compatible', content='ie=edge')
+		title Home-10 AI Machine Learning | Edurock - Education LMS Template
+		meta(name='description', content)
+		meta(name='viewport', content='width=device-width,initial-scale=1')
+		link(rel='shortcut icon', type='image/x-icon', href='img/favicon.ico')
+		//  Place favicon.ico in the root directory 
+		//  CSS here 
+		link(rel='stylesheet', href='css/bootstrap.min.css')
+		link(rel='stylesheet', href='css/animate.min.css')
+		link(rel='stylesheet', href='css/aos.min.css')
+		link(rel='stylesheet', href='css/magnific-popup.css')
+		link(rel='stylesheet', href='css/icofont.min.css')
+		link(rel='stylesheet', href='css/slick.css')
+		link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css')
+		link(rel='stylesheet', href='css/style.min.css')
+		script.
+			
+			// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+			        if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+			          document.documentElement.classList.add("is_dark");
+			        } 
+			        if (localStorage.getItem("theme-color") === "light") {
+			          document.documentElement.classList.remove("is_dark");
+			        }
+			
+	body.body__wrapper
+		//  pre loader area start 
+		#back__preloader
+			#back__circle_loader
+			.back__loader_logo
+				img(src='img/pre.png', alt='Preload')
+		//  pre loader area end 
+		//  Dark/Light area start 
+		.mode_switcher.my_switcher
+			button#light--to-dark-button.light.align-items-center
+				svg.ionicon.dark__mode(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 512 512')
+					path(d='M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z', fill='none', stroke='currentColor', stroke-linecap='round', stroke-linejoin='round', stroke-width='32')
+				svg.ionicon.light__mode(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 512 512')
+					path(fill='none', stroke='currentColor', stroke-linecap='round', stroke-miterlimit='10', stroke-width='32', d='M256 48v48M256 416v48M403.08 108.92l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48M96 256H48M403.08 403.08l-33.94-33.94M142.86 142.86l-33.94-33.94')
+					circle(cx='256', cy='256', r='80', fill='none', stroke='currentColor', stroke-linecap='round', stroke-miterlimit='10', stroke-width='32')
+				span.light__mode Light
+				span.dark__mode Dark
+		//  Dark/Light area end 
+		main.main_wrapper.overflow-hidden
+			//  topbar__section__stert 
+			.topbararea
+				.container
+					.row
+						.col-xl-6.col-lg-6
+							.topbar__left
+								ul
+									li.
+										
+										Call Us: +1 800 123 456 789
+										
+									li.
+										
+										- Mail Us: Itcroc@mail.com
+										
+						.col-xl-6.col-lg-6
+							.topbar__right
+								.topbar__icon
+									i.icofont-location-pin
+								.topbar__text
+									p 684 West College St. Sun City, USA
+								.topbar__list
+									ul
+										li
+											a(href='#')
+												i.icofont-facebook
+										li
+											a(href='#')
+												i.icofont-twitter
+										li
+											a(href='#')
+												i.icofont-instagram
+										li
+											a(href='#')
+												i.icofont-youtube-play
+			//  topbar__section__end 
+			//  headar section start 
+			header
+				.headerarea.headerarea__3.header__sticky.header__area
+					.container.desktop__menu__wrapper
+						.row
+							.col-xl-2.col-lg-2.col-md-6
+								.headerarea__left
+									.headerarea__left__logo
+										a(href='index.html')
+											img(src='img/logo/logo_1.png', alt='logo')
+							.col-xl-7.col-lg-7.main_menu_wrap
+								.headerarea__main__menu
+									nav
+										ul
+											li.mega__menu.position-static
+												a.headerarea__has__dropdown(href='index.html')
+													| Demos
+													i.icofont-rounded-down
+													|  
+												.headerarea__submenu.mega__menu__wrapper.mega__menu__grid__5
+													ul.nav.tab__button__wrap#myTab2(role='tablist')
+														li.nav-item(role='presentation')
+															button.single__tab__link.active(data-bs-toggle='tab', data-bs-target='#projects__light', type='button') Light
+														li.nav-item(role='presentation')
+															button.single__tab__link(data-bs-toggle='tab', data-bs-target='#projects__dark', type='button') Dark
+													.tab-content.tab__content__wrapper#myTabContent2
+														.tab-pane.fade.active.show#projects__light(role='tabpanel', aria-labelledby='projects__light')
+															.row
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='index.html')
+																			img(src='img/mega/home-1.png', alt='Mega Menu')
+																			span.mega__menu__thumb__title Home (Default)
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='home-2.html')
+																			img(src='img/mega/home-2.png', alt='Mega Menu')
+																			span.mega__menu__thumb__title Home (Elegant)
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='home-3.html')
+																			img(src='img/mega/home-3.png', alt='Mega Menu')
+																			span.mega__menu__thumb__title Home (Classic)
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='home-4.html')
+																			img(src='img/mega/home-4.png', alt='Mega Menu')
+																			span.mega__menu__thumb__title Home (Classic LMS)
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='home-5.html')
+																			img(src='img/mega/home-5.png', alt='Mega Menu')
+																			span.mega__menu__thumb__title Home (Online Course)
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='home-6.html')
+																			img(src='img/mega/home-6.png', alt='Mega Menu')
+																			span.mega__menu__thumb__title Home (Marketplace)
+																		span.mega__menu__thumb__label New
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='home-7.html')
+																			img(src='img/mega/home-7.png', alt='Mega Menu')
+																			span.mega__menu__thumb__title Home (University)
+																		span.mega__menu__thumb__label New
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='home-8.html')
+																			img(src='img/mega/home-8.png', alt='Mega Menu')
+																			span.mega__menu__thumb__title Home (eCommerce)
+																		span.mega__menu__thumb__label New
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='home-9.html')
+																			img(src='img/mega/home-9.png', alt='Mega Menu')
+																			span.mega__menu__thumb__title Home (Kindergarten)
+																		span.mega__menu__thumb__label New
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='home-10.html')
+																			img(src='img/mega/home-10.png', alt='Mega Menu')
+																			span.mega__menu__thumb__title Home (Machine Learning)
+																		span.mega__menu__thumb__label New
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='home-11.html')
+																			img(src='img/mega/home-11.png', alt='Mega Menu')
+																			span.mega__menu__thumb__title Home (Single Course)
+																		span.mega__menu__thumb__label New
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='#')
+																			img(src='img/mega/coming.png', alt='Mega Menu 1')
+																			span.mega__menu__thumb__title Layout Coming Soon 1
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='#')
+																			img(src='img/mega/coming.png', alt='Mega Menu 2')
+																			span.mega__menu__thumb__title Layout Coming Soon 2
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='#')
+																			img(src='img/mega/coming.png', alt='Mega Menu 3')
+																			span.mega__menu__thumb__title Layout Coming Soon 3
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='#')
+																			img(src='img/mega/coming.png', alt='Mega Menu 4')
+																			span.mega__menu__thumb__title Layout Coming Soon 4
+														.tab-pane.fade#projects__dark(role='tabpanel', aria-labelledby='projects__dark')
+															.row
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='index-dark.html')
+																			img(src='img/mega/home-1-dark.png', alt='Mega Menu')
+																			span.mega__menu__thumb__title Home (Default)
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='home-2-dark.html')
+																			img(src='img/mega/home-2-dark.png', alt='Mega Menu')
+																			span.mega__menu__thumb__title Home (Elegant)
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='home-3-dark.html')
+																			img(src='img/mega/home-3-dark.png', alt='Mega Menu')
+																			span.mega__menu__thumb__title Home (Classic)
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='home-4-dark.html')
+																			img(src='img/mega/home-4-dark.png', alt='Mega Menu')
+																			span.mega__menu__thumb__title Home (Classic LMS)
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='home-5-dark.html')
+																			img(src='img/mega/home-5-dark.png', alt='Mega Menu')
+																			span.mega__menu__thumb__title Home (Online Course)
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='home-6-dark.html')
+																			img(src='img/mega/home-6-dark.png', alt='Mega Menu')
+																			span.mega__menu__thumb__title Home (Marketplace)
+																		span.mega__menu__thumb__label New
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='home-7-dark.html')
+																			img(src='img/mega/home-7-dark.png', alt='Mega Menu')
+																			span.mega__menu__thumb__title Home (University)
+																		span.mega__menu__thumb__label New
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='home-8-dark.html')
+																			img(src='img/mega/home-8-dark.png', alt='Mega Menu')
+																			span.mega__menu__thumb__title Home (eCommerce)
+																		span.mega__menu__thumb__label New
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='home-9-dark.html')
+																			img(src='img/mega/home-9-dark.png', alt='Mega Menu')
+																			span.mega__menu__thumb__title Home (Kindergarten)
+																		span.mega__menu__thumb__label New
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='home-10-dark.html')
+																			img(src='img/mega/home-10-dark.png', alt='Mega Menu')
+																			span.mega__menu__thumb__title Home (Machine Learning)
+																		span.mega__menu__thumb__label New
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='home-11-dark.html')
+																			img(src='img/mega/home-11-dark.png', alt='Mega Menu')
+																			span.mega__menu__thumb__title Home (Single Course)
+																		span.mega__menu__thumb__label New
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='#')
+																			img(src='img/mega/coming-dark.png', alt='Mega Menu 1')
+																			span.mega__menu__thumb__title Layout Coming Soon 1
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='#')
+																			img(src='img/mega/coming-dark.png', alt='Mega Menu 2')
+																			span.mega__menu__thumb__title Layout Coming Soon 2
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='#')
+																			img(src='img/mega/coming-dark.png', alt='Mega Menu 3')
+																			span.mega__menu__thumb__title Layout Coming Soon 3
+																.col-3.mega__menu__single__wrap
+																	.mega__menu__thumb
+																		a(href='#')
+																			img(src='img/mega/coming-dark.png', alt='Mega Menu 4')
+																			span.mega__menu__thumb__title Layout Coming Soon 4
+											li.mega__menu.position-static
+												a.headerarea__has__dropdown(href='about.html')
+													| Pages
+													i.icofont-rounded-down
+													|  
+												.headerarea__submenu.mega__menu__wrapper
+													.row
+														.col-3.mega__menu__single__wrap
+															h4.mega__menu__title
+																a(href='#') Get Started 1
+															ul.mega__menu__item
+																li
+																	a(href='about.html')
+																		| About 
+																		span.mega__menu__label Sale Everything
+																li
+																	a(href='about-dark.html')
+																		| About (Dark)
+																		span.mega__menu__label.new New
+																li
+																	a(href='blog.html') Blog
+																li
+																	a(href='blog-dark.html') Blog (Dark)
+																li
+																	a(href='blog-details.html') Blog Details
+																li
+																	a(href='blog-details-dark.html') Blog Details (Dark)
+														.col-3.mega__menu__single__wrap
+															h4.mega__menu__title
+																a(href='#') Get Started 2
+															ul.mega__menu__item
+																li
+																	a(href='error.html') Error 404
+																li
+																	a(href='error-dark.html') Error (Dark)
+																li
+																	a(href='event-details.html') Event Details
+																li
+																	a(href='zoom/zoom-meetings.html')
+																		| Zoom
+																		span.mega__menu__label Online Call
+																li
+																	a(href='zoom/zoom-meetings-dark.html') Zoom Meeting (Dark)
+																li
+																	a(href='zoom/zoom-meeting-details.html') Zoom Meeting Details
+														.col-3.mega__menu__single__wrap
+															h4.mega__menu__title
+																a(href='#') Get Started 3
+															ul.mega__menu__item
+																li
+																	a(href='zoom/zoom-meeting-details-dark.html') Meeting Details (Dark)
+																li
+																	a(href='login.html') Login
+																li
+																	a(href='login-dark.html') Login (Dark)
+																li
+																	a(href='#') Maintenance
+																li
+																	a(href='#') Maintenance (Dark)
+																li
+																	a(href='#') Terms & Condition
+														.col-3.mega__menu__single__wrap
+															h4.mega__menu__title
+																a(href='#') Get Started 4
+															ul.mega__menu__item
+																li
+																	a(href='#') Terms & Condition (Dark)
+																li
+																	a(href='#') Privacy Policy
+																li
+																	a(href='#') Privacy Policy (Dark)
+																li
+																	a(href='#') Success Stories
+																li
+																	a(href='#') Success Stories (Dark)
+																li
+																	a(href='#') Work Policy
+														.col-12.mega__menu__single__wrap.sp_top_30
+															.mega__menu__img
+																a(href='#')
+																	img(src='img/mega/mega_menu_2.png', alt='Mega Menu')
+											li.mega__menu.position-static
+												a.headerarea__has__dropdown(href='course.html')
+													| Courses
+													i.icofont-rounded-down
+													|  
+												.headerarea__submenu.mega__menu__wrapper
+													.row
+														.col-3.mega__menu__single__wrap
+															h4.mega__menu__title
+																a(href='#') Get Started 1
+															ul.mega__menu__item
+																li
+																	a(href='course.html')
+																		| Grid 
+																		span.mega__menu__label All Courses
+																li
+																	a(href='course-dark.html') Course Grid (Dark)
+																li
+																	a(href='course-grid.html') Course Grid
+																li
+																	a(href='course-grid-dark.html') Course Grid (Dark)
+																li
+																	a(href='course-list.html') Course List
+																li
+																	a(href='course-list-dark.html') Course List (Dark)
+														.col-3.mega__menu__single__wrap
+															h4.mega__menu__title
+																a(href='#') Get Started 2
+															ul.mega__menu__item
+																li
+																	a(href='course-details.html') Course Details
+																li
+																	a(href='course-details-dark.html') Course Details (Dark)
+																li
+																	a(href='course-details-2.html') Course Details 2
+																li
+																	a(href='course-details-2-dark.html') Details 2 (Dark)
+																li
+																	a(href='course-details-3.html') Course Details 3
+																li
+																	a(href='course-details-3.html') Details 3 (Dark)
+														.col-3.mega__menu__single__wrap
+															h4.mega__menu__title
+																a(href='#') Get Started 3
+															ul.mega__menu__item
+																li
+																	a(href='dashboard/become-an-instructor.html') Become An Instructor
+																li
+																	a(href='dashboard/create-course.html')
+																		| Create Course 
+																		span.mega__menu__label Career
+																li
+																	a(href='instructor.html') Instructor
+																li
+																	a(href='instructor-dark.html') Instructor (Dark)
+																li
+																	a(href='instructor-details.html') Instructor Details
+																li
+																	a(href='lesson.html')
+																		| Course Lesson
+																		span.mega__menu__label.new New
+														.col-3.mega__menu__single__wrap
+															.mega__menu__img
+																a(href='#')
+																	img(src='img/mega/mega_menu_1.png', alt='Mega Menu')
+											li
+												a.headerarea__has__dropdown(href='dashboard/instructor-dashboard.html')
+													| Dashboard
+
+													i.icofont-rounded-down
+												ul.headerarea__submenu.headerarea__submenu--third--wrap
+													li
+														a(href='../admin-dashboard.html')
+															| Admin 
+															i.icofont-rounded-right
+														ul.headerarea__submenu--third
+															li
+																a(href='dashboard/admin-dashboard.html') Admin Dashboard
+															li
+																a(href='dashboard/admin-profile.html') Admin Profile
+															li
+																a(href='dashboard/admin-message.html') Message
+															li
+																a(href='dashboard/admin-course.html') Courses
+															li
+																a(href='dashboard/admin-reviews.html') Review
+															li
+																a(href='dashboard/admin-quiz-attempts.html') Admin Quiz
+															li
+																a(href='dashboard/admin-settings.html') Settings
+													li
+														a(href='dashboard/instructor-dashboard.html')
+															| Instructor 
+															i.icofont-rounded-right
+														ul.headerarea__submenu--third
+															li
+																a(href='dashboard/instructor-dashboard.html') Inst. Dashboard
+															li
+																a(href='dashboard/instructor-profile.html') Inst. Profile
+															li
+																a(href='dashboard/instructor-message.html') Message
+															li
+																a(href='dashboard/instructor-wishlist.html') Wishlist
+															li
+																a(href='dashboard/instructor-reviews.html') Review
+															li
+																a(href='dashboard/instructor-my-quiz-attempts.html') My Quiz
+															li
+																a(href='dashboard/instructor-order-history.html') Order History
+															li
+																a(href='dashboard/instructor-course.html') My Courses
+															li
+																a(href='dashboard/instructor-announcments.html') Announcements
+															li
+																a(href='dashboard/instructor-quiz-attempts.html') Quiz Attempts
+															li
+																a(href='dashboard/instructor-assignments.html') Assignment
+															li
+																a(href='dashboard/instructor-settings.html') Settings
+													li
+														a(href='dashboard/student-dashboard.html')
+															| Student 
+															i.icofont-rounded-right
+														ul.headerarea__submenu--third
+															li
+																a(href='dashboard/student-dashboard.html') Dashboard
+															li
+																a(href='dashboard/student-profile.html') Profile
+															li
+																a(href='dashboard/student-message.html') Message
+															li
+																a(href='dashboard/student-enrolled-courses.html') Enrolled Courses
+															li
+																a(href='dashboard/student-wishlist.html') Wishlist
+															li
+																a(href='dashboard/student-reviews.html') Review
+															li
+																a(href='dashboard/student-my-quiz-attempts.html') My Quiz
+															li
+																a(href='dashboard/student-assignments.html') Assignment
+															li
+																a(href='dashboard/student-settings.html') Settings
+											li
+												a.headerarea__has__dropdown(href='ecommerce/shop.html')
+													| eCommerce
+
+													i.icofont-rounded-down
+												ul.headerarea__submenu
+													li
+														a(href='ecommerce/shop.html')
+															| Shop
+															span.mega__menu__label Online Store
+													li
+														a(href='ecommerce/product-details.html') Product Details
+													li
+														a(href='ecommerce/cart.html') Cart
+													li
+														a(href='ecommerce/checkout.html') Checkout
+													li
+														a(href='ecommerce/wishlist.html') Wishlist
+							.col-xl-3.col-lg-3.col-md-6
+								.headerarea__right
+									.header__cart
+										a(href='#')
+											i.icofont-cart-alt
+										.header__right__dropdown__wrapper
+											.header__right__dropdown__inner
+												.single__header__right__dropdown
+													.header__right__dropdown__img
+														a(href='#')
+															img(src='img/grid/cart1.jpg', alt='photo')
+													.header__right__dropdown__content
+														a(href='shop-product.html') Web Directory
+														p
+															| 1 x 
+															span.price $ 80.00
+													.header__right__dropdown__close
+														a(href='#')
+															i.icofont-close-line
+												.single__header__right__dropdown
+													.header__right__dropdown__img
+														a(href='#')
+															img(src='img/grid/cart2.jpg', alt='photo')
+													.header__right__dropdown__content
+														a(href='shop-product.html') Design Minois
+														p
+															| 1 x 
+															span.price $ 60.00
+													.header__right__dropdown__close
+														a(href='#')
+															i.icofont-close-line
+												.single__header__right__dropdown
+													.header__right__dropdown__img
+														a(href='#')
+															img(src='img/grid/cart3.jpg', alt='photo')
+													.header__right__dropdown__content
+														a(href='shop-product.html') Crash Course
+														p
+															| 1 x 
+															span.price $ 70.00
+													.header__right__dropdown__close
+														a(href='#')
+															i.icofont-close-line
+											p.dropdown__price
+												| Total: 
+												span $1,100.00
+											.header__right__dropdown__button
+												a.white__color(href='ecommerce/cart.html') View Cart
+												a.blue__color(href='ecommerce/checkout.html') Checkout
+									.headerarea__login
+										a(href='login.html')
+											i.icofont-user-alt-5
+									.headerarea__button
+										a(href='#') Get Start
+					.container-fluid.mob_menu_wrapper
+						.row.align-items-center
+							.col-6
+								.mobile-logo
+									a.logo__dark(href='#')
+										img(src='img/logo/logo_1.png', alt='logo')
+							.col-6
+								.header-right-wrap
+									.headerarea__right
+										.header__cart
+											a(href='#')
+												i.icofont-cart-alt
+											.header__right__dropdown__wrapper
+												.header__right__dropdown__inner
+													.single__header__right__dropdown
+														.header__right__dropdown__img
+															a(href='#')
+																img(src='img/grid/cart1.jpg', alt='photo')
+														.header__right__dropdown__content
+															a(href='shop-product.html') Web Directory
+															p
+																| 1 x 
+																span.price $ 80.00
+														.header__right__dropdown__close
+															a(href='#')
+																i.icofont-close-line
+													.single__header__right__dropdown
+														.header__right__dropdown__img
+															a(href='#')
+																img(src='img/grid/cart2.jpg', alt='photo')
+														.header__right__dropdown__content
+															a(href='shop-product.html') Design Minois
+															p
+																| 1 x 
+																span.price $ 60.00
+														.header__right__dropdown__close
+															a(href='#')
+																i.icofont-close-line
+													.single__header__right__dropdown
+														.header__right__dropdown__img
+															a(href='#')
+																img(src='img/grid/cart3.jpg', alt='photo')
+														.header__right__dropdown__content
+															a(href='shop-product.html') Crash Course
+															p
+																| 1 x 
+																span.price $ 70.00
+														.header__right__dropdown__close
+															a(href='#')
+																i.icofont-close-line
+												p.dropdown__price
+													| Total: 
+													span $1,100.00
+												.header__right__dropdown__button
+													a.white__color(href='#') VIEW CART
+													a.blue__color(href='#') CHECKOUT
+									.mobile-off-canvas
+										a.mobile-aside-button(href='#')
+											i.icofont-navigation-menu
+			//  header section end 
+			//  Mobile Menu Start Here 
+			.mobile-off-canvas-active
+				a.mobile-aside-close
+					i.icofont.icofont-close-line
+				.header-mobile-aside-wrap
+					.mobile-search
+						form.search-form(action='#')
+							input(type='text', placeholder='Search entire store…')
+							button.button-search
+								i.icofont.icofont-search-2
+					.mobile-menu-wrap.headerarea
+						.mobile-navigation
+							nav
+								ul.mobile-menu
+									li.menu-item-has-children
+										a(href='index.html') Home
+										ul.dropdown
+											li.menu-item-has-children
+												a(href='index.html') Homes Light
+												ul.dropdown
+													li
+														a(href='index.html') Home (Default)
+													li
+														a(href='home-2.html') Elegant
+													li
+														a(href='home-3.html') Classic
+													li
+														a(href='home-4.html') Classic LMS
+													li
+														a(href='home-5.html') Online Course
+													li
+														a(href='home-6.html') Marketplace
+													li
+														a(href='home-7.html') University
+													li
+														a(href='home-8.html') eCommerce
+													li
+														a(href='home-9.html') Kindergarten
+													li
+														a(href='home-10.html') Machine Learning
+													li
+														a(href='home-11.html') Single Course
+											li.menu-item-has-children
+												a(href='index.html') Homes Dark
+												ul.dropdown
+													li
+														a(href='index-dark.html') Home Default (Dark)
+													li
+														a(href='home-2-dark.html') Elegant (Dark)
+													li
+														a(href='home-3-dark.html') Classic (Dark)
+													li
+														a(href='home-4-dark.html') Classic LMS (Dark)
+													li
+														a(href='home-5-dark.html') Online Course (Dark)
+													li
+														a(href='home-6-dark.html') Marketplace (Dark)
+													li
+														a(href='home-7-dark.html') University (Dark)
+													li
+														a(href='home-8-dark.html') eCommerce (Dark)
+													li
+														a(href='home-9-dark.html') Kindergarten (Dark)
+													li
+														a(href='home-10-dark.html') Kindergarten (Dark)
+													li
+														a(href='home-11-dark.html') Single Course (Dark)
+									li.menu-item-has-children
+										a(href='#') Pages
+										ul.dropdown
+											li.menu-item-has-children
+												a(href='#') Get Started 1
+												ul.dropdown
+													li
+														a(href='about.html') About
+													li
+														a(href='about-dark.html')
+															| About (Dark)
+															span.mega__menu__label.new New
+													li
+														a(href='blog.html') Blog
+													li
+														a(href='blog-dark.html') Blog (Dark)
+													li
+														a(href='blog-details.html') Blog Details
+													li
+														a(href='blog-details-dark.html') Blog Details (Dark)
+											li.menu-item-has-children
+												a(href='#') Get Started 2
+												ul.dropdown
+													li
+														a(href='error.html') Error 404
+													li
+														a(href='error-dark.html') Error (Dark)
+													li
+														a(href='event-details.html') Event Details
+													li
+														a(href='zoom/zoom-meetings.html')
+															| Zoom
+															span.mega__menu__label Online Call
+													li
+														a(href='zoom/zoom-meetings-dark.html') Zoom Meeting (Dark)
+													li
+														a(href='zoom/zoom-meeting-details.html') Zoom Meeting Details
+											li.menu-item-has-children
+												a(href='#') Get Started 3
+												ul.dropdown
+													li
+														a(href='zoom/zoom-meeting-details-dark.html') Meeting Details (Dark)
+													li
+														a(href='login.html') Login
+													li
+														a(href='login-dark.html') Login (Dark)
+													li
+														a(href='#') Maintenance
+													li
+														a(href='#') Maintenance (Dark)
+													li
+														a(href='#') Terms & Condition
+											li.menu-item-has-children
+												a(href='#') Get Started 4
+												ul.dropdown
+													li
+														a(href='#') Terms & Condition (Dark)
+													li
+														a(href='#') Privacy Policy
+													li
+														a(href='#') Privacy Policy (Dark)
+													li
+														a(href='#') Success Stories
+													li
+														a(href='#') Success Stories (Dark)
+													li
+														a(href='#') Work Policy
+											li.menu-item-has-children
+												.mega__menu__img
+													a(href='#')
+														img(src='img/mega/mega_menu_2.png', alt='Mega Menu')
+									li.menu-item-has-children
+										a(href='course.html') Courses
+										ul.dropdown
+											li.menu-item-has-children
+												a(href='#') Get Started 1
+												ul.dropdown
+													li
+														a(href='course.html')
+															| Grid 
+															span.mega__menu__label All Courses
+													li
+														a(href='course-dark.html') Course Grid (Dark)
+													li
+														a(href='course-grid.html') Course Grid
+													li
+														a(href='course-grid-dark.html') Course Grid (Dark)
+													li
+														a(href='course-list.html') Course List
+													li
+														a(href='course-list-dark.html') Course List (Dark)
+											li.menu-item-has-children
+												a(href='#') Get Started 2
+												ul.dropdown
+													li
+														a(href='course-details.html') Course Details
+													li
+														a(href='course-details-dark.html') Course Details (Dark)
+													li
+														a(href='course-details-2.html') Course Details 2
+													li
+														a(href='course-details-2-dark.html') Details 2 (Dark)
+													li
+														a(href='course-details-3.html') Course Details 3
+													li
+														a(href='course-details-3.html') Details 3 (Dark)
+											li.menu-item-has-children
+												a(href='#') Get Started 3
+												ul.dropdown
+													li
+														a(href='dashboard/become-an-instructor.html') Become An Instructor
+													li
+														a(href='dashboard/create-course.html')
+															| Create Course 
+															span.mega__menu__label Career
+													li
+														a(href='instructor.html') Instructor
+													li
+														a(href='instructor-dark.html') Instructor (Dark)
+													li
+														a(href='instructor-details.html') Instructor Details
+													li
+														a(href='lesson.html')
+															| Course Lesson
+															span.mega__menu__label.new New
+											li.menu-item-has-children
+												.mega__menu__img
+													a(href='#')
+														img(src='img/mega/mega_menu_1.png', alt='Mega Menu')
+									li.menu-item-has-children
+										a(href='dashboard/admin-dashboard.html') Dashboard
+										ul.dropdown
+											li.menu-item-has-children
+												a(href='#') Admin
+												ul.dropdown
+													li
+														a(href='dashboard/admin-dashboard.html') Admin Dashboard
+													li
+														a(href='dashboard/admin-profile.html') Admin Profile
+													li
+														a(href='dashboard/admin-message.html') Message
+													li
+														a(href='dashboard/admin-course.html') Courses
+													li
+														a(href='dashboard/admin-reviews.html') Review
+													li
+														a(href='dashboard/admin-quiz-attempts.html') Admin Quiz
+													li
+														a(href='dashboard/admin-settings.html') Settings
+											li.menu-item-has-children
+												a(href='#') Instructor
+												ul.dropdown
+													li
+														a(href='dashboard/instructor-dashboard.html') Inst. Dashboard
+													li
+														a(href='dashboard/instructor-profile.html') Inst. Profile
+													li
+														a(href='dashboard/instructor-message.html') Message
+													li
+														a(href='dashboard/instructor-wishlist.html') Wishlist
+													li
+														a(href='dashboard/instructor-reviews.html') Review
+													li
+														a(href='dashboard/instructor-my-quiz-attempts.html') My Quiz
+													li
+														a(href='dashboard/instructor-order-history.html') Order History
+													li
+														a(href='dashboard/instructor-course.html') My Courses
+													li
+														a(href='dashboard/instructor-announcments.html') Announcements
+													li
+														a(href='dashboard/instructor-quiz-attempts.html') Quiz Attempts
+													li
+														a(href='dashboard/instructor-assignments.html') Assignment
+													li
+														a(href='dashboard/instructor-settings.html') Settings
+											li.menu-item-has-children
+												a(href='#') Student
+												ul.dropdown
+													li
+														a(href='dashboard/student-dashboard.html') Dashboard
+													li
+														a(href='dashboard/student-profile.html') Profile
+													li
+														a(href='dashboard/student-message.html') Message
+													li
+														a(href='dashboard/student-enrolled-courses.html') Enrolled Courses
+													li
+														a(href='dashboard/student-wishlist.html') Wishlist
+													li
+														a(href='dashboard/student-reviews.html') Review
+													li
+														a(href='dashboard/student-my-quiz-attempts.html') My Quiz
+													li
+														a(href='dashboard/student-assignments.html') Assignment
+													li
+														a(href='dashboard/student-settings.html') Settings
+									li.menu-item-has-children
+										a(href='ecommerce/shop.html') eCommerce
+										ul.dropdown
+											li
+												a(href='ecommerce/shop.html')
+													| Shop
+													span.mega__menu__label Online Store
+											li
+												a(href='ecommerce/product-details.html') Product Details
+											li
+												a(href='ecommerce/cart.html') Cart
+											li
+												a(href='ecommerce/checkout.html') Checkout
+											li
+												a(href='ecommerce/wishlist.html') Wishlist
+					.mobile-curr-lang-wrap
+						.single-mobile-curr-lang
+							a.mobile-language-active(href='#')
+								| Language 
+								i.icofont-thin-down
+							.lang-curr-dropdown.lang-dropdown-active
+								ul
+									li
+										a(href='#') English (US)
+									li
+										a(href='#') English (UK)
+									li
+										a(href='#') Spanish
+						//
+							 <div class="single-mobile-curr-lang">
+							                                <a class="mobile-currency-active" href="#">Currency <i class="icofont-thin-down"></i></a>
+							                                <div class="lang-curr-dropdown curr-dropdown-active">
+							                                    <ul>
+							                                        <li><a href="#">USD</a></li>
+							                                        <li><a href="#">EUR</a></li>
+							                                        <li><a href="#">Real</a></li>
+							                                        <li><a href="#">BDT</a></li>
+							                                    </ul>
+							                                </div>
+							                            </div> 
+						.single-mobile-curr-lang
+							a.mobile-account-active(href='#')
+								| My Account 
+								i.icofont-thin-down
+							.lang-curr-dropdown.account-dropdown-active
+								ul
+									li
+										a(href='login.html') Login
+									li
+										a(href='login.html') / Create Account
+									li
+										a(href='login.html') My Account
+					.mobile-social-wrap
+						a.facebook(href='#')
+							i.icofont.icofont-facebook
+						a.twitter(href='#')
+							i.icofont.icofont-twitter
+						a.pinterest(href='#')
+							i.icofont.icofont-pinterest
+						a.instagram(href='#')
+							i.icofont.icofont-instagram
+						a.google(href='#')
+							i.icofont.icofont-youtube-play
+			//  Mobile Menu end Here 
+			//  theme fixed shadow 
+			div
+				.theme__shadow__circle
+				.theme__shadow__circle.shadow__right
+			//  theme fixed shadow 
+			//  herobannerarea__section__start 
+			.herobannerarea.herobannerarea__2.herobannerarea__machine__learning(style='background: url(img/herobanner/ai_1.jpg)')
+				.swiper.ai__slider
+					.herobannerarea__slider__wrap.swiper-wrapper
+						.swiper-slide.herobannerarea__single__slider
+							.container
+								.row.justify-content-center
+									.col-xl-9.col-lg-10.col-md-12.col-sm-12.col-12(data-aos='fade-up')
+										.herobannerarea__content__wraper.text-center
+											.herobannerarea__title
+												.herobannerarea__small__title
+													span Artificial Intelligence
+												.herobannerarea__title__heading__2.herobannerarea__title__heading__3
+													h2
+														| The Best Machine Learning for Smart 
+														span AI
+														|  Systems.
+											.herobannerarea__text.herobannerarea__text__2
+												p
+													| Lorem Ipsum is simply dummy text of the printing typesetting
+													br
+													| industry. Lorem Ipsum has been
+											.hreobannerarea__button__2
+												a.default__button(href='#') Buy Now
+												a.default__button.hreobannerarea__button__3(href='#') Explore More
+						.swiper-slide.herobannerarea__single__slider
+							.container
+								.row.justify-content-center
+									.col-xl-9.col-lg-10.col-md-12.col-sm-12.col-12(data-aos='fade-up')
+										.herobannerarea__content__wraper.text-center
+											.herobannerarea__title
+												.herobannerarea__small__title
+													span Artificial Intelligence
+												.herobannerarea__title__heading__2.herobannerarea__title__heading__3
+													h2 Techniques for Intelligent Artificial Intelligence.
+											.herobannerarea__text.herobannerarea__text__2
+												p
+													| Lorem Ipsum is simply dummy text of the printing typesetting
+													br
+													| industry. Lorem Ipsum has been
+											.hreobannerarea__button__2
+												a.default__button(href='#') Buy Now
+												a.default__button.hreobannerarea__button__3(href='#') Explore More
+						.swiper-slide.herobannerarea__single__slider
+							.container
+								.row.justify-content-center
+									.col-xl-9.col-lg-10.col-md-12.col-sm-12.col-12(data-aos='fade-up')
+										.herobannerarea__content__wraper.text-center
+											.herobannerarea__title
+												.herobannerarea__small__title
+													span Artificial Intelligence
+												.herobannerarea__title__heading__2.herobannerarea__title__heading__3
+													h2
+														| Awesome Machine Learning for Smart 
+														span AI
+														|  Systems.
+											.herobannerarea__text.herobannerarea__text__2
+												p
+													| Lorem Ipsum is simply dummy text of the printing typesetting
+													br
+													| industry. Lorem Ipsum has been
+											.hreobannerarea__button__2
+												a.default__button(href='#') Buy Now
+												a.default__button.hreobannerarea__button__3(href='#') Explore More
+				.slider__controls__wrap.slider__controls__pagination.slider__controls__arrows
+					//
+						<div class="swiper-button-next arrow-btn"></div>
+						                <div class="swiper-button-prev arrow-btn"></div>
+					.swiper-pagination
+				.herobannerarea__icon__2
+					img.herobanner__common__img.herobanner__img__1(src='img/herobanner/herobanner__ai.png', alt='photo')
+					//
+						 <img class="herobanner__common__img herobanner__img__2" src="img/herobanner/herobanner__2.png" alt="photo">
+						                <img class="herobanner__common__img herobanner__img__3" src="img/herobanner/herobanner__3.png" alt="photo">
+						                <img class="herobanner__common__img herobanner__img__4" src="img/herobanner/herobanner__4.png" alt="photo">
+						                <img class="herobanner__common__img herobanner__img__5" src="img/herobanner/herobanner__5.png" alt="photo"> 
+			//  herobannerarea__section__end
+			//  aboutarea__5__section__start 
+			.aboutarea__5.sp_bottom_100.sp_top_100
+				.container
+					.row
+						.col-xl-6.col-lg-6(data-aos='fade-up')
+							.aboutarea__5__img(data-tilt)
+								img(src='img/about/about_ai.jpg', alt='about')
+						.col-xl-6.col-lg-6(data-aos='fade-up')
+							.aboutarea__content__wraper__5
+								.section__title
+									.section__title__button
+										.default__small__button About us
+									.section__title__heading
+										h2 Welcome to the online Learning Center
+								.about__text__5
+									p Meet my startup design agency Shape Rex Currently I am working at CodeNext as Product Designer.
+								.aboutarea__5__small__icon__wraper
+									.aboutarea__5__small__icon
+										img(src='img/about/about_15.png', alt='about')
+									.aboutarea__small__heading
+										span 10+ Years ExperienceIn
+										|  this game, Means Product Designing
+
+								.aboutarea__para__5
+									p I love to work in User Experience & User Interface designing. Because I love to solve the design problem and find easy and better solutions to solve it.
+								.aboutarea__bottom__button__5
+									a.default__button(href='#')
+										| More About
+
+										i.icofont-long-arrow-right
+			//  aboutarea__5__section__end 
+			//  populer__section__start 
+			.populerarea__2.sp_top_50.sp_bottom_50
+				.container
+					.row
+						.col-xl-6.col-lg-6.col-md-12.col-sm-12.col-12.about__wrap__content(data-aos='fade-up')
+							.service__animate__shape__1
+								img(src='img/service/service__shape__1.png', alt)
+							.populerarea__content__wraper__2
+								.section__title
+									.section__title__button
+										.default__small__button Populer Subject
+									.section__title__heading
+										h2
+											| Provide It & Technol
+
+											br
+											| Subject For You
+								.populerarea__content__2
+									p.populerarea__para__1 Construction is a general term meaning the art and science to form systems organizations, and comes from Latin Construction is
+									p.populerarea__para__2 Construction is a general term meaning the art and science to form systems organizations, and comes from Latin Construction is a organizations, and comes from Latin construction and Old
+								.populerarea__button__2
+									a.default__button(href='#')
+										| Explore More
+
+										i.icofont-long-arrow-right
+						.col-xl-6.col-lg-6.col-md-12.col-sm-12.col-12.service__wrap__content
+							.service__animate__shape__2
+								img(src='img/service/service__shape__bg__1.png', alt)
+							.row
+								.col-xl-6.col-lg-6.col-md-6.col-sm-12(data-aos='fade-up')
+									.single__service
+										.service__img
+											img(src='img/icon/chat-app.png', alt)
+										.service__content.service__content__2
+											h3
+												a(href='course-details.html') AI Automation
+											p Construction is a general term the art and science to form
+										.service__button
+											a(href='#')
+												| View Subject
+
+												i.icofont-long-arrow-right
+										.service__small__img
+											svg.icon__hover__img(fill='none', xmlns='http://www.w3.org/2000/svg')
+												path(d='M16.5961 10.265L19 1.33069L10.0022 3.73285L1 6.1306L7.59393 12.6627L14.1879 19.1992L16.5961 10.265Z', stroke='#FFB31F', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+									.single__service
+										.service__img
+											img(src='img/icon/machine-learning.png', alt)
+										.service__content.service__content__2
+											h3
+												a(href='course-details.html') Machine Learning
+											p Construction is a general term the art and science to form
+										.service__button
+											a(href='#')
+												| View Subject
+
+												i.icofont-long-arrow-right
+										.service__small__img
+											svg.icon__hover__img(fill='none', xmlns='http://www.w3.org/2000/svg')
+												path(d='M16.5961 10.265L19 1.33069L10.0022 3.73285L1 6.1306L7.59393 12.6627L14.1879 19.1992L16.5961 10.265Z', stroke='#FFB31F', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+								.col-xl-6.col-lg-6.col-md-6.col-sm-12(data-aos='fade-up')
+									.single__service.ss_margin
+										.service__img
+											img(src='img/icon/virtual-reality.png', alt)
+										.service__content.service__content__2
+											h3
+												a(href='course-details.html') Virtual Reality
+											p Construction is a general term the art and science to form
+										.service__button
+											a(href='#')
+												| View Subject
+
+												i.icofont-long-arrow-right
+										.service__small__img
+											svg.icon__hover__img(fill='none', xmlns='http://www.w3.org/2000/svg')
+												path(d='M16.5961 10.265L19 1.33069L10.0022 3.73285L1 6.1306L7.59393 12.6627L14.1879 19.1992L16.5961 10.265Z', stroke='#FFB31F', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+									.single__service
+										.service__img
+											img(src='img/icon/artificial-intelligence.png', alt)
+										.service__content.service__content__2
+											h3
+												a(href='course-details.html') Ai Cloud Services
+											p Construction is a general term the art and science to form
+										.service__button
+											a(href='#')
+												| View Subject
+
+												i.icofont-long-arrow-right
+										.service__small__img
+											svg.icon__hover__img(fill='none', xmlns='http://www.w3.org/2000/svg')
+												path(d='M16.5961 10.265L19 1.33069L10.0022 3.73285L1 6.1306L7.59393 12.6627L14.1879 19.1992L16.5961 10.265Z', stroke='#FFB31F', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+			//  populer__section__end
+			//  counter__section__start 
+			.counterarea.sp_bottom_100.sp_top_80
+				.container-fluid.full__width__padding
+					.row
+						.col-xl-3.col-lg-3.col-md-6.col-sm-6.col-12(data-aos='fade-up')
+							.counterarea__text__wraper
+								.counter__img
+									img(src='img/counter/counter__1.png', alt='counter')
+								.counter__content__wraper
+									.counter__number
+										span.counter 27
+										| +
+
+									p Total Acheivment
+						.col-xl-3.col-lg-3.col-md-6.col-sm-6.col-12(data-aos='fade-up')
+							.counterarea__text__wraper
+								.counter__img
+									img(src='img/counter/counter__2.png', alt='counter')
+								.counter__content__wraper
+									.counter__number
+										span.counter 145
+										| +
+
+									p TOTAL STUDENTS
+						.col-xl-3.col-lg-3.col-md-6.col-sm-6.col-12(data-aos='fade-up')
+							.counterarea__text__wraper
+								.counter__img
+									img(src='img/counter/counter__3.png', alt='counter')
+								.counter__content__wraper
+									.counter__number
+										span.counter 10
+										| k
+
+									p tOTAL INSTRUCTOR
+						.col-xl-3.col-lg-3.col-md-6.col-sm-6.col-12(data-aos='fade-up')
+							.counterarea__text__wraper
+								.counter__img
+									img(src='img/counter/counter__4.png', alt='counter')
+								.counter__content__wraper
+									.counter__number
+										span.counter 214
+										| +
+
+									p OVER THE WORLD
+			//  counter__section__end
+			//  early__programs Start 
+			.early__programs.research__programs.sp_bottom_100
+				.container-fluid.full__width__padding
+					.row
+						.section__title.text-center(data-aos='fade-up')
+							.section__title__button
+								.default__small__button #Research
+							.section__title__heading.heading__underline
+								h2
+									| Differentiating through case 
+									span studies
+									br
+									| Machine learning.
+					.row
+						.col-xl-3.col-lg-4.col-md-6.col-sm-12.col-12(data-aos='fade-up')
+							.single__blog__wraper
+								.single__blog__img
+									img(src='img/program/ai_1.jpg', alt='blog')
+								.single__blog__content
+									p Technology
+									h4
+										a(href='#') Army Defence Intelligence & Ml
+									.single__blog__bottom__button
+										a(href='#') Read More 
+						.col-xl-3.col-lg-4.col-md-6.col-sm-12.col-12(data-aos='fade-up')
+							.single__blog__wraper
+								.single__blog__img
+									img(src='img/program/ai_2.jpg', alt='blog')
+								.single__blog__content
+									p Machine
+									h4
+										a(href='#') Classifying Best Intelligence Photos
+									.single__blog__bottom__button
+										a(href='#') Read More 
+						.col-xl-3.col-lg-4.col-md-6.col-sm-12.col-12(data-aos='fade-up')
+							.single__blog__wraper
+								.single__blog__img
+									img(src='img/program/ai_3.jpg', alt='blog')
+								.single__blog__content
+									p Robot
+									h4
+										a(href='#') Industry Labor Machine
+									.single__blog__bottom__button
+										a(href='#') Read More 
+						.col-xl-3.col-lg-4.col-md-6.col-sm-12.col-12(data-aos='fade-up')
+							.single__blog__wraper
+								.single__blog__img
+									img(src='img/program/ai_4.jpg', alt='blog')
+								.single__blog__content
+									p Automation
+									h4
+										a(href='#') Education Super Al Studies
+									.single__blog__bottom__button
+										a(href='#') Read More 
+			//  early__programs End 
+			//  .about__tap__section__end 
+			.gridarea__2.sp_bottom_100(data-aos='fade-up')
+				.container-fluid.full__width__padding
+					.section__title
+						.section__title__heading
+							h2 Our online courses
+					.row.row__custom__class
+						.swiper.featured__course
+							.swiper-wrapper
+								.col-xl-4.col-lg-4.col-md-6.col-sm-6.col-12.grid-item.column__custom__class.swiper-slide
+									.gridarea__wraper
+										.gridarea__img
+											a(href='course-details.html')
+												img(src='img/grid/grid_1.png', alt='grid')
+											.gridarea__small__button.gridarea__small__button__1
+												.grid__badge Data & Tech
+											.gridarea__small__icon
+												a(href='#')
+													i.icofont-heart-alt
+										.gridarea__content
+											.gridarea__list
+												ul
+													li
+														i.icofont-book-alt
+														|  23 Lesson
+
+													li
+														i.icofont-clock-time
+														|  1 hr 30 min
+
+											.gridarea__heading
+												h3
+													a(href='course-details.html') Foundation course to under stand about softwere
+											.gridarea__price
+												| $32.00 
+												del / $67.00
+												span
+													del.del__2 Free
+											.gridarea__bottom
+												a(href='instructor-details.html')
+													.gridarea__small__img
+														img(src='img/grid/grid_small_1.jpg', alt='grid')
+														.gridarea__small__content
+															h6 Micle Jhon
+												.gridarea__star
+													i.icofont-star
+													i.icofont-star
+													i.icofont-star
+													i.icofont-star
+													i.icofont-star
+													span (44)
+								.col-xl-4.col-lg-4.col-md-6.col-sm-6.col-12.grid-item.column__custom__class.swiper-slide
+									.gridarea__wraper
+										.gridarea__img
+											a(href='course-details.html')
+												img(src='img/grid/grid_2.png', alt='grid')
+											.gridarea__small__button
+												.grid__badge.yellow__color Data & Tech
+											.gridarea__small__icon
+												a(href='#')
+													i.icofont-heart-alt
+										.gridarea__content
+											.gridarea__list
+												ul
+													li
+														i.icofont-book-alt
+														|  23 Lesson
+
+													li
+														i.icofont-clock-time
+														|  1 hr 30 min
+
+											.gridarea__heading
+												h3
+													a(href='course-details.html') Foundation course to under stand about softwere
+											.gridarea__price
+												| $32.00 
+												del / $67.00
+												span
+													del.del__2 Free
+											.gridarea__bottom
+												a(href='instructor-details.html')
+													.gridarea__small__img
+														img(src='img/grid/grid_small_1.jpg', alt='grid')
+														.gridarea__small__content
+															h6 Micle Jhon
+												.gridarea__star
+													i.icofont-star
+													i.icofont-star
+													i.icofont-star
+													i.icofont-star
+													i.icofont-star
+													span (44)
+								.col-xl-4.col-lg-4.col-md-6.col-sm-6.col-12.grid-item.column__custom__class.swiper-slide
+									.gridarea__wraper
+										.gridarea__img
+											a(href='course-details.html')
+												img(src='img/grid/grid_3.png', alt='grid')
+											.gridarea__small__button
+												.grid__badge Data & Tech
+											.gridarea__small__icon
+												a(href='#')
+													i.icofont-heart-alt
+										.gridarea__content
+											.gridarea__list
+												ul
+													li
+														i.icofont-book-alt
+														|  23 Lesson
+
+													li
+														i.icofont-clock-time
+														|  1 hr 30 min
+
+											.gridarea__heading
+												h3
+													a(href='course-details.html') Foundation course to under stand about softwere
+											.gridarea__price
+												| $32.00 
+												del / $67.00
+												span
+													del.del__2 Free
+											.gridarea__bottom
+												a(href='instructor-details.html')
+													.gridarea__small__img
+														img(src='img/grid/grid_small_1.jpg', alt='grid')
+														.gridarea__small__content
+															h6 Micle Jhon
+												.gridarea__star
+													i.icofont-star
+													i.icofont-star
+													i.icofont-star
+													i.icofont-star
+													i.icofont-star
+													span (44)
+								.col-xl-4.col-lg-4.col-md-6.col-sm-6.col-12.grid-item.column__custom__class.swiper-slide
+									.gridarea__wraper
+										.gridarea__img
+											a(href='course-details.html')
+												img(src='img/grid/grid_4.png', alt='grid')
+											.gridarea__small__button.gridarea__small__button__1
+												.grid__badge.green__color Data & Tech
+											.gridarea__small__icon
+												a(href='#')
+													i.icofont-heart-alt
+										.gridarea__content
+											.gridarea__list
+												ul
+													li
+														i.icofont-book-alt
+														|  23 Lesson
+
+													li
+														i.icofont-clock-time
+														|  1 hr 30 min
+
+											.gridarea__heading
+												h3
+													a(href='course-details.html') Foundation course to under stand about softwere
+											.gridarea__price
+												| $32.00 
+												del / $67.00
+												span
+													del.del__2 Free
+											.gridarea__bottom
+												a(href='instructor-details.html')
+													.gridarea__small__img
+														img(src='img/grid/grid_small_1.jpg', alt='grid')
+														.gridarea__small__content
+															h6 Micle Jhon
+												.gridarea__star
+													i.icofont-star
+													i.icofont-star
+													i.icofont-star
+													i.icofont-star
+													i.icofont-star
+													span (44)
+								.col-xl-4.col-lg-4.col-md-6.col-sm-6.col-12.grid-item.column__custom__class.swiper-slide
+									.gridarea__wraper
+										.gridarea__img
+											a(href='course-details.html')
+												img(src='img/grid/kid_5.jpg', alt='grid')
+											.gridarea__small__button.gridarea__small__button__1
+												.grid__badge.pink__color Data & Tech
+											.gridarea__small__icon
+												a(href='#')
+													i.icofont-heart-alt
+										.gridarea__content
+											.gridarea__list
+												ul
+													li
+														i.icofont-book-alt
+														|  23 Lesson
+
+													li
+														i.icofont-clock-time
+														|  1 hr 30 min
+
+											.gridarea__heading
+												h3
+													a(href='course-details.html') Foundation course to under stand about softwere
+											.gridarea__price
+												| $32.00 
+												del / $67.00
+												span
+													del.del__2 Free
+											.gridarea__bottom
+												a(href='instructor-details.html')
+													.gridarea__small__img
+														img(src='img/grid/grid_small_1.jpg', alt='grid')
+														.gridarea__small__content
+															h6 Micle Jhon
+												.gridarea__star
+													i.icofont-star
+													i.icofont-star
+													i.icofont-star
+													i.icofont-star
+													i.icofont-star
+													span (44)
+								.col-xl-4.col-lg-4.col-md-6.col-sm-6.col-12.grid-item.column__custom__class.swiper-slide
+									.gridarea__wraper
+										.gridarea__img
+											a(href='course-details.html')
+												img(src='img/grid/kid_6.jpg', alt='grid')
+											.gridarea__small__button.gridarea__small__button__1
+												.grid__badge.blue__color Mnided
+											.gridarea__small__icon
+												a(href='#')
+													i.icofont-heart-alt
+										.gridarea__content
+											.gridarea__list
+												ul
+													li
+														i.icofont-book-alt
+														|  23 Lesson
+
+													li
+														i.icofont-clock-time
+														|  1 hr 30 min
+
+											.gridarea__heading
+												h3
+													a(href='course-details.html') Foundation course to under stand about softwere
+											.gridarea__price
+												| $32.00 
+												del / $67.00
+												span
+													del.del__2 Free
+											.gridarea__bottom
+												a(href='instructor-details.html')
+													.gridarea__small__img
+														img(src='img/grid/grid_small_1.jpg', alt='grid')
+														.gridarea__small__content
+															h6 Micle Jhon
+												.gridarea__star
+													i.icofont-star
+													i.icofont-star
+													i.icofont-star
+													i.icofont-star
+													i.icofont-star
+													span (44)
+							.slider__controls__wrap.slider__controls__arrows
+								.swiper-button-next.arrow-btn
+								.swiper-button-prev.arrow-btn
+			//  Learning__section__start 
+			.pricingarea.sp_bottom_100
+				.container
+					.row(data-aos='fade-up')
+						.section__title.text-center
+							.section__title__button
+								.default__small__button Pricing Plan
+							.section__title__heading
+								h2
+									| Choose The Best Package
+
+									br
+									| For your Learning
+					.row
+						.col-xl-4.col-lg-4.col-md-6.col-sm-12.col-12(data-aos='fade-up')
+							.pricingarea__content__wraper
+								.pricingarea__heading
+									.pricingarea__plan__type
+										h6 FREE
+										img(src='img/icon/price__1.png', alt)
+									.pricingarea__number
+										h1
+											span.price__currency $
+											| 0
+											span.price__durition / month
+									p Perfect for startup
+								.pricingarea__list
+									ul
+										li
+											i.icofont-check
+											|  2 user
+
+										li
+											i.icofont-check
+											|  Learning Scope
+
+										li
+											i.icofont-close.close__button
+											|  Team collaboration
+
+										li
+											i.icofont-check.dark__color__2
+											|  Export HTML code
+
+										li
+											i.icofont-check
+											|  Upload Your Logo
+
+								.pricingarea__button
+									a.default__button(href='#') Get Started
+								.pricingarea__text
+									p No creadit card required
+						.col-xl-4.col-lg-4.col-md-6.col-sm-12.col-12(data-aos='fade-up')
+							.pricingarea__content__wraper
+								.pricingarea__heading
+									.pricingarea__plan__type
+										h6 BASIC
+										img(src='img/icon/price__2.png', alt)
+									.pricingarea__number
+										h1
+											span.price__currency $
+											| 29
+											span.price__durition / month
+									p Perfect for startup
+								.pricingarea__list
+									ul
+										li
+											i.icofont-check
+											|  5 user
+
+										li
+											i.icofont-check
+											|  Learning Scope
+
+										li
+											i.icofont-close.close__button
+											|  Team collaboration
+
+										li
+											i.icofont-check.dark__color__2
+											|  Export HTML code
+
+										li
+											i.icofont-check
+											|  Upload Your Logo
+
+								.pricingarea__button.pricingarea__button__2
+									a.default__button(href='#') Get Started
+								.pricingarea__text
+									p No creadit card required
+						.col-xl-4.col-lg-4.col-md-6.col-sm-12.col-12(data-aos='fade-up')
+							.pricingarea__content__wraper
+								.pricingarea__heading
+									.pricingarea__plan__type
+										h6 PRO
+										img(src='img/icon/price__3.png', alt)
+									.pricingarea__number
+										h1
+											span.price__currency $
+											| 59
+											span.price__durition / month
+									p Perfect for startup
+								.pricingarea__list
+									ul
+										li
+											i.icofont-check
+											|  2 user
+
+										li
+											i.icofont-check
+											|  Learning Scope
+
+										li
+											i.icofont-close.close__button
+											|  Team collaboration
+
+										li
+											i.icofont-check.dark__color__2
+											|  Export HTML code
+
+										li
+											i.icofont-check
+											|  Upload Your Logo
+
+								.pricingarea__button
+									a.default__button(href='#') Get Started
+								.pricingarea__text
+									p No creadit card required
+			//  Learning__section__end
+			//  testimonial__section__start 
+			.testimonialarea__3(style='background: url(img/testimonial/testi_bg.png);')
+				.container
+					.row
+						.col-xl-6.col-lg-6.col-md-12.col-sm-12.col-12
+							.section__title__2(data-aos='fade-up')
+								.section__small__title
+									span Education Solution
+								.section__title__heading__2.section__title__heading__3.heading__fontsize__2
+									h2 Client Testimonial About Our Lms Agency
+							.testimonial__slider__active__3(data-aos='fade-up')
+								.testimonialarea__paragraph__3
+									p.testimonial__quote
+										i.icofont-quote-left.quote__left
+										| The other hand we denounce with righteou indg ation and dislike men who are so beguiled and demorali ed by the of pleasure of the moment.Dislike men who are so beguiled and demoraliz worlds ed by the charms of pleasure of the moment. Lorem ipsum dolor sit amet, consec elit.
+										i.icofont-quote-right.quote__right
+									.testimonialarea__person__3
+										.testimonial__img__3
+											img(src='img/testimonial/testi_2.png', alt)
+										.testimonial__name
+											h6
+												a(href='#') Mirnsdo Jons
+											span Ui/Ux Designer
+								.testimonialarea__paragraph__3
+									p.testimonial__quote
+										i.icofont-quote-left.quote__left
+										| The other hand we denounce with righteou indg ation and dislike men who are so beguiled and demorali ed by the of pleasure of the moment.Dislike men who are so beguiled and demoraliz worlds ed by the charms of pleasure of the moment. Lorem ipsum dolor sit amet, piscing elit.
+										i.icofont-quote-right.quote__right
+									.testimonialarea__person__3
+										.testimonial__img__3
+											img(src='img/testimonial/testi_2.png', alt)
+										.testimonial__name
+											h6
+												a(href='#') Mirnsdo Jons
+											span Ui/Ux Designer
+								.testimonialarea__paragraph__3
+									p.testimonial__quote
+										i.icofont-quote-left.quote__left
+										| The other hand we denounce with righteou indg ation and dislike men who are so beguiled and demorali ed by the of pleasure of the moment.Dislike men who are so beguiled and demoraliz worlds ed by the charms of pleasure of the moment. Lorem ipsum dolor sit amet.
+										i.icofont-quote-right.quote__right
+									.testimonialarea__person__3
+										.testimonial__img__3
+											img(src='img/testimonial/testi_2.png', alt)
+										.testimonial__name
+											h6
+												a(href='#') Mirnsdo Jons
+											span Ui/Ux Designer
+						.col-xl-6.col-lg-6.col-md-12.col-sm-12.col-12(data-aos='fade-up')
+							.testimonial__group__img(data-tilt)
+								img(src='img/testimonial/testi__group__1.png', alt)
+			//  testimonial__section__start 
+			.gallery.sp_top_100
+				.container-fluid.full__width__padding
+					.blogsidebar__content__wraper__2
+						.photo__gallery__img
+							.single__gallery__img
+								img(src='img/gallery/ai_4.jpg', alt='photo')
+								.gallery__icon
+									a.popup__img(href='img/gallery/ai_1.jpg')
+										i.icofont-eye-alt
+							.single__gallery__img
+								img(src='img/gallery/ai_2.jpg', alt='photo')
+								.gallery__icon
+									a.popup__img(href='img/gallery/ai_2.jpg')
+										i.icofont-eye-alt
+							.single__gallery__img
+								img(src='img/gallery/ai_3.jpg', alt='photo')
+								.gallery__icon
+									a.popup__img(href='img/gallery/ai_3.jpg')
+										i.icofont-eye-alt
+							.single__gallery__img
+								img(src='img/gallery/ai_5.jpg', alt='photo')
+								.gallery__icon
+									a.popup__img(href='img/gallery/ai_4.jpg')
+										i.icofont-eye-alt
+							.single__gallery__img
+								img(src='img/gallery/ai_7.jpg', alt='photo')
+								.gallery__icon
+									a.popup__img(href='img/gallery/ai_7.jpg')
+										i.icofont-eye-alt
+							.single__gallery__img
+								img(src='img/gallery/ai_8.jpg', alt='photo')
+								.gallery__icon
+									a.popup__img(href='img/gallery/ai_8.jpg')
+										i.icofont-eye-alt
+							.single__gallery__img
+								img(src='img/gallery/ai_1.jpg', alt='photo')
+								.gallery__icon
+									a.popup__img(href='img/gallery/ai_5.jpg')
+										i.icofont-eye-alt
+							.single__gallery__img
+								img(src='img/gallery/ai_6.jpg', alt='photo')
+								.gallery__icon
+									a.popup__img(href='img/gallery/ai_6.jpg')
+										i.icofont-eye-alt
+			//  blog__section__start 
+			.blogarea__2.sp_top_80.sp_bottom_100
+				.container
+					.row
+						.col-xl-12(data-aos='fade-up')
+							.section__title__2.text-center.teamarea__margin
+								.section__small__title
+									span News & Blog
+								.section__title__heading__2.section__title__heading__3.heading__fontsize__2
+									h2 Latest News & Blogs
+					.row
+						.col-xl-4.col-lg-4.col-md-6.col-sm-12.col-12(data-aos='fade-up')
+							.single__blog__wraper
+								.single__blog__img
+									img(src='img/blog/blog_34.jpg', alt='blog')
+									.single__blog__button
+										a.default__button(href='#') Story
+								.single__blog__content
+									p 13 january 2023
+									h4
+										a(href='#') Facebook design is dedicated to what's new in design
+									.single__blog__bottom__button
+										a(href='#')
+											| Read More
+
+											i.icofont-long-arrow-right
+						.col-xl-4.col-lg-4.col-md-6.col-sm-12.col-12(data-aos='fade-up')
+							.single__blog__wraper
+								.single__blog__img
+									img(src='img/blog/blog_35.jpg', alt='blog')
+									.single__blog__button
+										a.default__button(href='#') Story
+								.single__blog__content
+									p 13 january 2023
+									h4
+										a(href='#') Facebook design is dedicated to what's new in design
+									.single__blog__bottom__button
+										a(href='#')
+											| Read More
+
+											i.icofont-long-arrow-right
+						.col-xl-4.col-lg-4.col-md-6.col-sm-12.col-12(data-aos='fade-up')
+							.single__blog__wraper
+								.single__blog__img
+									img(src='img/blog/blog_36.jpg', alt='blog')
+									.single__blog__button
+										a.default__button(href='#') Story
+								.single__blog__content
+									p 13 january 2023
+									h4
+										a(href='#') Facebook design is dedicated to what's new in design
+									.single__blog__bottom__button
+										a(href='#')
+											| Read More
+
+											i.icofont-long-arrow-right
+						.col-xl-12(data-aos='fade-up')
+							.blogarea__bottom__button
+								a.default__button(href='#') MORE BLOG
+			//  blog__section__end 
+			//  footer__section__start 
+			.footerarea.footerarea__image(style='background-image:url(img/footer/footer_bg_ai.png)')
+				.container
+					.footerarea__newsletter__wraper
+						.row
+							.col-xl-6.col-lg-6.col-md-6.col-sm-12.col-12(data-aos='fade-up')
+								.footerarea__text
+									h3
+										| Still You Need Our 
+										span Support
+										|  ?
+									p Don’t wait make a smart & logical quote here. Its pretty easy.
+							.col-xl-6.col-lg-6.col-md-6.col-sm-12.col-12(data-aos='fade-up')
+								.footerarea__newsletter
+									.footerarea__newsletter__input
+										form(action='#')
+											input(type='text', placeholder='Enter your email here')
+											.footerarea__newsletter__button
+												button.subscribe__btn(type='submit') Subscribe Now
+					.footerarea__wrapper.footerarea__wrapper__2
+						.row
+							.col-xl-4.col-lg-4.col-md-6.col-sm-12(data-aos='fade-up')
+								.footerarea__inner.footerarea__about__us
+									.footerarea__heading
+										h3 About us
+									.footerarea__content
+										p orporate clients and leisure travelers has been relying on Groundlink for dependable safe, and professional chauffeured car end service in major cities across World.
+									.foter__bottom__text
+										.footer__bottom__icon
+											i.icofont-clock-time
+										.footer__bottom__content
+											h6 Opening Houres
+											span Mon - Sat(8.00 - 6.00)
+											span Sunday - Closed
+							.col-xl-2.col-lg-2.col-md-6.col-sm-6(data-aos='fade-up')
+								.footerarea__inner
+									.footerarea__heading
+										h3 Usefull Links
+									.footerarea__list
+										ul
+											li
+												a(href='#') About Us
+											li
+												a(href='#') Teachers
+											li
+												a(href='#') Partner
+											li
+												a(href='#') Room-Details
+											li
+												a(href='#') Gallery
+							.col-xl-3.col-lg-3.col-md-6.col-sm-6(data-aos='fade-up')
+								.footerarea__inner.footerarea__padding__left
+									.footerarea__heading
+										h3 Course
+									.footerarea__list
+										ul
+											li
+												a(href='#') Ui Ux Design
+											li
+												a(href='#') Web Development
+											li
+												a(href='#') Business Strategy
+											li
+												a(href='#') Softwere Development
+											li
+												a(href='#') Business English
+							.col-xl-3.col-lg-3.col-md-6.col-sm-12(data-aos='fade-up')
+								.footerarea__right__wraper.footerarea__inner
+									.footerarea__heading
+										h3 Recent Post
+									.footerarea__right__list
+										ul
+											li
+												a(href='#')
+													.footerarea__right__img
+														img(src='img/footer/footer__1.png', alt='footerphoto')
+													.footerarea__right__content
+														span 02 Apr 2023 
+														h6 Best Your Business
+											li
+												a(href='#')
+													.footerarea__right__img
+														img(src='img/footer/footer__2.png', alt='footerphoto')
+													.footerarea__right__content
+														span 02 Apr 2023 
+														h6 Keep Your Business
+											li
+												a(href='#')
+													.footerarea__right__img
+														img(src='img/footer/footer__3.png', alt='footerphoto')
+													.footerarea__right__content
+														span 02 Apr 2023 
+														h6 Nice Your Business
+					.footerarea__copyright__wrapper.footerarea__copyright__wrapper__2
+						.row
+							.col-xl-3.col-lg-3
+								.copyright__logo
+									a(href='/')
+										img(src='img/logo/logo_2.png', alt='logo')
+							.col-xl-6.col-lg-6
+								.footerarea__copyright__content.footerarea__copyright__content__2
+									p
+										| Copyright © 
+										span 2023
+										|  by edurock. All Rights Reserved.
+							.col-xl-3.col-lg-3
+								.footerarea__icon.footerarea__icon__2
+									ul
+										li
+											a(href='//facebook.com')
+												i.icofont-facebook
+										li
+											a(href='//twitter.com')
+												i.icofont-twitter
+										li
+											a(href='//vimeo.com')
+												i.icofont-vimeo
+										li
+											a(href='//linkedin.com')
+												i.icofont-linkedin
+										li
+											a(href='//skype.com')
+												i.icofont-skype
+			//  footer__section__end 
+		//  JS here 
+		script(src='js/vendor/modernizr-3.5.0.min.js')
+		script(src='js/vendor/jquery-3.6.0.min.js')
+		script(src='js/popper.min.js')
+		script(src='js/bootstrap.min.js')
+		script(src='js/isotope.pkgd.min.js')
+		script(src='js/slick.min.js')
+		script(src='js/jquery.meanmenu.min.js')
+		script(src='js/ajax-form.js')
+		script(src='js/wow.min.js')
+		script(src='js/jquery.scrollUp.min.js')
+		script(src='js/imagesloaded.pkgd.min.js')
+		script(src='js/jquery.magnific-popup.min.js')
+		script(src='js/waypoints.min.js')
+		script(src='js/jquery.counterup.min.js')
+		script(src='js/plugins.js')
+		script(src='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js')
+		script(src='js/main.js')
+		script.
+			
+			// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+			        if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+			          document.getElementById("light--to-dark-button")?.classList.add("dark--mode");
+			        } 
+			        if (localStorage.getItem("theme-color") === "light") {
+			          document.getElementById("light--to-dark-button")?.classList.remove("dark--mode");
+			        }
+			
